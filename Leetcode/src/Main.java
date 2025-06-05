@@ -5,10 +5,12 @@ import string.*;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {2, 7, 11, 15};
-        int target = 9;
-        int[] result = TwoSum.twoSum(arr, target);
-        System.out.println(result[0] + ", " + result[1]);
+        int[] arr = {-1,0,1,2,-1,-4};
+
+        List<List<Integer>> result = ThreeSum.threeSum(arr);
+        for (List<Integer> triplet : result) {
+            System.out.println(triplet);
+        }
 
     }
 }
